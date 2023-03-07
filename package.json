@@ -1,0 +1,19 @@
+{
+  "name": "modern-js",
+  "version": "0.0.0",
+  "description": "Playing around with a 2023+ JS build pipeline",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/robwierzbowski/modern-js.git"
+  },
+  "author": "Rob Wierzbowski",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/robwierzbowski/modern-js/issues"
+  },
+  "homepage": "https://github.com/robwierzbowski/modern-js#readme"
+}
