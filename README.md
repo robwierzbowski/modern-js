@@ -1,2 +1,3 @@
-# modern-js
-Playing around with a 2023+ JS build pipeline
+# Modern-js
+
+Playing around with a 2023+ JS build pipeline.
