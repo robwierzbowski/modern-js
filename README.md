@@ -8,6 +8,7 @@ Playing around with a 2023+ JS build pipeline.
 
 - Vite is a lot closer to Webpack than I thought it would be. Plenty of magic going on under the hood.
 - A main goal with this repo will be to set it up to output the most modern built files possible, avoiding transpilation of any 2020+ browser acceptable code. No auto default imports, preferably ES module imports w/out concatenation, dynamic imports, native async/await, etc.
+- Vite uses rollup and rollup plugins under the hood! Finally my boi rollup in the spotlight 🙌🏼
 
 ##### Babel vs EsBuild vs SWC ✅
 
@@ -24,3 +25,4 @@ Playing around with a 2023+ JS build pipeline.
 - Vite is using PostCSS for `@import`s. Do we have access to a PostCSS config to manage autoprefixing and some additional niceties like nesting and maybe mixins? Edit: they do!
 - Vite handles CSS url/import resolution. They keep calling path resolution "rebasing" which although may be correct sounds very weird.
 - No need for other CSS precompiler features (vars, funcs). Modern CSS is the 🐝's 🦵🏼.
+- Looks like the `?inline` loader/query param doesn't work with NodeNext imports enabled. Right now my modules are being injected in HEAD -- check if they're extracted in build. _Edit_: well, there's my answer: https://vitejs.dev/guide/features.html#css-code-splitting
