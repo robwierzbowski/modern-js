@@ -9,9 +9,10 @@ Playing around with a 2023+ JS build pipeline.
 - Vite is a lot closer to Webpack than I thought it would be. Plenty of magic going on under the hood.
 - A main goal with this repo will be to set it up to output the most modern built files possible, avoiding transpilation of any 2020+ browser acceptable code. No auto default imports, preferably ES module imports w/out concatenation, dynamic imports, native async/await, etc.
 
-##### Babel vs SWC ✅
+##### Babel vs EsBuild vs SWC ✅
 
 - Seems like Vite exposes TS config, but handles SWC internally. SWC's default behavior is to target ES5, which is awful for perf in modern browsers. From what I gather from Vite's react-swc plugin source, Vite is targeting ES2020. I assume that includes dynamic imports, which are a big reason I'm interested in Vite. I want to live the dream of coding and loading with untranspiled ES6 modules.
+- Looks like the [Vite config](https://vitejs.dev/config/build-options.html) exposes most of the transpilation and compilation options, including target and browser support!
 
 ##### TypeScript
 
