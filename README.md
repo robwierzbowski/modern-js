@@ -21,9 +21,14 @@ Playing around with a 2023+ JS build pipeline.
 - Kinda odd that TS manages JSON import loading. I guess it's ok, but it's yet another place you might configure a JSON file loader (more common being a bundler loader a la webpack). It would be great to just have this in ECMAScript and be done with it.
 - OHHHH, we're no-emitting, and I'm guessing using SWC transpile the TS. I wonder if SWC is somehow reading the TS config, or if the TS config is just for editor / linter checking. If so, changing the rules without changing the underlying SWC config will create unexpected output.
 
-###### CSS
+##### CSS
 
 - Vite is using PostCSS for `@import`s. Do we have access to a PostCSS config to manage autoprefixing and some additional niceties like nesting and maybe mixins? Edit: they do!
 - Vite handles CSS url/import resolution. They keep calling path resolution "rebasing" which although may be correct sounds very weird.
 - No need for other CSS precompiler features (vars, funcs). Modern CSS is the 🐝's 🦵🏼.
 - Looks like the `?inline` loader/query param doesn't work with NodeNext imports enabled. Right now my modules are being injected in HEAD -- check if they're extracted in build. _Edit_: well, there's my answer: https://vitejs.dev/guide/features.html#css-code-splitting
+
+##### Etc.
+
+- [https://browserslist.dev/](https://browserslist.dev/) is a nice little resource for visualizing browserslist query results.
+- Big thanks to Mehdi M. for writing [this very clear article](https://dev.to/meduzen/when-vite-ignores-your-browserslist-configuration-3hoe) on getting browserslist and EsBuild working together.
