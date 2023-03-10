@@ -6,13 +6,10 @@ const App = () => {
 
   return (
     <div className={styles.app}>
-      <h1>Vite + React</h1>
+      <h1>Vite + React + TS + EsBuild</h1>
       <button onClick={() => setCount(count => count + 1)}>
         count is {count}
       </button>
-      <p>
-        Edit <code>src/App.tsx</code> and save to test HMR
-      </p>
     </div>
   );
 };
