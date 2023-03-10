@@ -9,6 +9,7 @@ Playing around with a 2023+ JS build pipeline.
 - Vite is a lot closer to Webpack than I thought it would be. Plenty of magic going on under the hood.
 - A main goal with this repo will be to set it up to output the most modern built files possible, avoiding transpilation of any 2020+ browser acceptable code. No auto default imports, preferably ES module imports w/out concatenation, dynamic imports, native async/await, etc.
 - Vite uses rollup and rollup plugins under the hood! Finally my boi rollup in the spotlight 🙌🏼
+- Vite manages the root-level index.html, just like most webpack setups. This file is used for dev serving, and it's altered and output into dist when running build.
 
 ##### Babel vs EsBuild ✅ vs SWC
 
