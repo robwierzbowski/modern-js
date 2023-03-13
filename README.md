@@ -20,7 +20,7 @@ Playing around with a 2023+ JS build pipeline.
 ##### TypeScript
 
 - Kinda odd that TS manages JSON import loading. I guess it's ok, but it's yet another place you might configure a JSON file loader (more common being a bundler loader a la webpack). It would be great to just have this in ECMAScript and be done with it.
-- OHHHH, we're no-emitting, and I'm guessing using SWC transpile the TS. I wonder if SWC is somehow reading the TS config, or if the TS config is just for editor / linter checking. If so, changing the rules without changing the underlying SWC config will create unexpected output.
+- OHHHH, we're no-emitting, and I'm guessing using SWC transpile the TS (note, I switched back to pure EsBuild). I wonder if SWC is somehow reading the TS config, or if the TS config is just for editor / linter checking. If so, changing the rules without changing the underlying SWC config will create unexpected output.
 
 ##### CSS
 
