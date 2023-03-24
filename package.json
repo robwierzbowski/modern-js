@@ -16,7 +16,8 @@
     "build": "tsc && vite build",
     "dev": "vite",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "typecheck": "tsc"
   },
   "dependencies": {
     "react": "^18.2.0",
