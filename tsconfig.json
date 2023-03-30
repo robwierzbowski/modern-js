@@ -8,9 +8,9 @@
     "jsx": "react-jsx",
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "module": "ESNext",
-    // I'd prefer to use 'nodenext' here, but we need all deps to correctly use
-    // d.mts file extensions when being pulled in at the node level. Example
-    // issue here: https://github.com/vitejs/vite-plugin-react/issues/104
+    // I'd prefer to use 'nodenext' here, but we need typescript to be able to
+    // find npm dependency d.ts files. Example issue here:
+    // https://github.com/vitejs/vite-plugin-react/issues/104
     "moduleResolution": "node",
     "noEmit": true,
     "resolveJsonModule": true,
