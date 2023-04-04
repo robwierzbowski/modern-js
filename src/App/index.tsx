@@ -3,7 +3,7 @@ import styles from './styles.module.css';
 
 const App = () => {
   const [count, setCount] = useState(0);
-  const onClick = useCallback(() => setCount(val => val + 1), [setCount]);
+  const onClick = useCallback(() => setCount(val => val + 1), []);
 
   return (
     <div className={styles.app}>
