@@ -1,5 +1,0 @@
-# Do we need this to help eslint find the root dir, as we did in previous
-# versions? I forget the bug but I'm having some eslint issues so might as well
-# try it.
-
-dist
