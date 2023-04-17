@@ -33,6 +33,18 @@ Playing around with a 2023+ JS build pipeline.
 - No need for other CSS precompiler features (vars, funcs). Modern CSS is the 🐝's 🦵🏼.
 - Looks like the `?inline` loader/query param doesn't work with NodeNext imports enabled. Right now my modules are being injected in HEAD -- check if they're extracted in build. _Edit_: well, there's my answer: https://vitejs.dev/guide/features.html#css-code-splitting
 
+### Testing
+
+##### Jest ✅ vs node-test-runner vs Ava
+
+There's a [new test runner native to node](https://glebbahmutov.com/blog/trying-node-test-runner/). But I don't think it's ready for wide usage. Aside from the lack of community support with linters, etc., due to newness, the output on failed tests is not on par with other options.
+
+We could look at Ava again. I'm thinking Jest is probably best for familiarity and wide usage.
+
+##### React Testing Library
+
+Is there an alternate? At this time I don't think so.
+
 ##### Etc.
 
 - [https://browserslist.dev/](https://browserslist.dev/) is a nice little resource for visualizing browserslist query results.
