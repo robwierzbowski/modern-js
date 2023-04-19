@@ -13,7 +13,7 @@
     "url": "git+ssh://git@github.com/robwierzbowski/modern-js.git"
   },
   "scripts": {
-    "build": "tsc && vite build",
+    "build": "npm run typecheck && npm run test && vite build",
     "dev": "vite",
     "lint": "eslint --format=pretty .",
     "preview": "vite preview",
