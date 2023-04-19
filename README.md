@@ -32,9 +32,16 @@ Playing around with a 2023+ JS build pipeline.
 
 ### Jest ✅ vs node-test-runner vs Ava
 
-- There's a [new test runner native to node](https://glebbahmutov.com/blog/trying-node-test-runner/), but I don't think it's ready for wide usage. Aside from the lack of community support with linters, etc., due to newness, the failed test output is not on par with existing options.
+- There's a [new test runner native to node](https://glebbahmutov.com/blog/trying-node-test-runner/), but I don't think it's ready for wide usage. Aside from the lack of community support with linters, etc. due to newness, the failed test output is not on par with existing options.
 - We could look at Ava again. I'm thinking Jest is probably best for familiarity and market share.
 - The first package that comes up when you search Jest and ESBuild is abandoned, but there's a very light Jest transformer wrapper at https://github.com/AkifumiSato/esbuild-jest-transform that works great. ESB options are pass through and ESB is a peer dependency, exactly what I want.
+- TODO:
+  - [ ] Add jest and RTL lints
+  - [ ] Add some user event tests with RTL
+  - [ ] Should we preemptively mock window.matchmedia, fetch, window.location, and intersection observer?
+  - [ ] Should we require at least one assertion per test?
+  - [ ] Should we fail on console expressions?
+  - [ ] Should we add jest-axe?
 
 ### React Testing Library
 
