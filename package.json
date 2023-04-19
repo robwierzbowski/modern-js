@@ -1,17 +1,9 @@
 {
   "name": "modern-js",
-  "author": "Rob Wierzbowski",
-  "description": "Playing around with a 2023+ JS build pipeline",
-  "homepage": "https://github.com/robwierzbowski/modern-js#readme",
-  "license": "UNLICENSED",
-  "main": "index.js",
-  "private": true,
-  "type": "module",
   "version": "0.0.0",
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/robwierzbowski/modern-js.git"
-  },
+  "private": true,
+  "description": "Playing around with a 2023+ JS build pipeline",
+  "main": "index.js",
   "scripts": {
     "build": "npm run typecheck && npm run test && vite build",
     "dev": "vite",
@@ -20,6 +12,13 @@
     "test": "jest",
     "typecheck": "tsc"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/robwierzbowski/modern-js.git"
+  },
+  "author": "Rob Wierzbowski",
+  "license": "UNLICENSED",
+  "homepage": "https://github.com/robwierzbowski/modern-js#readme",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
@@ -58,5 +57,6 @@
     "postcss-nested": "^6.0.1",
     "typescript": "^5.0.4",
     "vite": "^4.1.4"
-  }
+  },
+  "type": "module"
 }
