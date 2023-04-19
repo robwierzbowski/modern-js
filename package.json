@@ -17,8 +17,8 @@
     "dev": "vite",
     "lint": "eslint --format=pretty .",
     "preview": "vite preview",
-    "typecheck": "tsc",
-    "test": "jest ."
+    "test": "jest",
+    "typecheck": "tsc"
   },
   "dependencies": {
     "react": "^18.2.0",
