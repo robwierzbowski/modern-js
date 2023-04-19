@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "allowJs": false,
+    "allowImportingTsExtensions": true,
     "allowSyntheticDefaultImports": false,
     "esModuleInterop": false,
     "forceConsistentCasingInFileNames": true,
