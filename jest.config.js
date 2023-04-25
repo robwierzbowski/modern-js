@@ -1,16 +1,26 @@
 const testFileRegex = '\\.test\\.(j|t)sx?$';
+const transformFileRegex = '\\.(j|t)sx?$';
 
 const config = {
   moduleNameMapper: {
     '\\.css$': 'identity-obj-proxy',
   },
+  setupFilesAfterEnv: ['./src/test/setupAfterEnv.ts'],
   testEnvironment: 'jest-environment-jsdom-global',
   testRegex: testFileRegex,
   transform: {
-    [testFileRegex]: [
+    [transformFileRegex]: [
       'esbuild-jest-transform',
       {
         jsx: 'automatic',
+        loader: {
+          // Ideally we'd use the esbuild css modules plugin to align with Vite,
+          // but esbuild requires async mode to use plugins, and this
+          // transformer uses sync mode. For the time being, we'll discard CSS
+          // imports in tests. Reference:
+          // https://github.com/AkifumiSato/esbuild-jest-transform/issues/7
+          '.css': 'empty',
+        },
         sourcemap: true,
       },
     ],
