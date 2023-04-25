@@ -1,7 +1,0 @@
-{
-  "editor.fontLigatures": false,
-  "vsintellicode.java.completionsEnabled": false,
-  "vsintellicode.features.python.deepLearning": "default",
-  "vsintellicode.typescript.completionsEnabled": true,
-  "typescript.experimental.tsserver.web.enableProjectWideIntellisense": true
-}
