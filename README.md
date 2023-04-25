@@ -17,6 +17,7 @@ Playing around with a 2023+ JS build pipeline.
 - Looks like the [Vite config](https://vitejs.dev/config/build-options.html) exposes most of the transpilation and compilation options, including target and browser support!
 - Seems like Vite handles SWC internally. SWC's default behavior is to target ES5, which is awful for perf in modern browsers. From what I gather from Vite's react-swc plugin source, Vite is targeting ES2020. I assume that includes dynamic imports, which are a big reason I'm interested in Vite. I want to live the dream of coding and loading with untranspiled ES6 modules.
 - **The React-swc plugin only "Replaces Babel with SWC during development.** "During builds, SWC+esbuild are used when using plugins, and esbuild only otherwise". I prefer to minimize the number of tools doing a single job to make config and debugging easier. [Some tweets from Evan](https://twitter.com/youyuxi/status/1586042491739860993) point to SWC being the eventual default, but only for v big projects. EsBuild it is!
+- ESBuild with Jest is much less mature. I hacked it together but ran into some issues with css modules and RTL user event default imports that required some workarounds. Might contrib to `jest-esbuild-transform` to get plugins (css modules) working for Jest transforms.
 
 ### TypeScript
 
