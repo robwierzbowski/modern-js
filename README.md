@@ -36,10 +36,8 @@ Playing around with a 2023+ JS build pipeline.
 - We could look at Ava again. I'm thinking Jest is probably best for familiarity and market share.
 - The first package that comes up when you search Jest and ESBuild is abandoned, but there's a very light Jest transformer wrapper at https://github.com/AkifumiSato/esbuild-jest-transform that works great. ESB options are pass through and ESB is a peer dependency, exactly what I want.
 - TODO:
-  - [ ] Add jest and RTL lints
-  - [ ] Add some user event tests with RTL
+  - [ ] Require at least one assertion per test
   - [ ] Should we preemptively mock window.matchmedia, fetch, window.location, and intersection observer?
-  - [ ] Should we require at least one assertion per test?
   - [ ] Should we fail on console expressions?
   - [ ] Should we add jest-axe?
 
