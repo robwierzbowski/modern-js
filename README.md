@@ -51,3 +51,4 @@ Playing around with a 2023+ JS build pipeline.
 
 - [https://browserslist.dev/](https://browserslist.dev/) is a nice little resource for visualizing browserslist query results.
 - Big thanks to Mehdi M. for writing [this very clear article](https://dev.to/meduzen/when-vite-ignores-your-browserslist-configuration-3hoe) on getting browserslist and EsBuild working together.
+- Run `ANALYZE=true npm run build` to see Rollup's bundle analyzer. It's less pretty than webpack's, but it's still nice to have around.
