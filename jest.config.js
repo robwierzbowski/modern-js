@@ -5,7 +5,10 @@ const config = {
   moduleNameMapper: {
     '\\.css$': 'identity-obj-proxy',
   },
-  setupFilesAfterEnv: ['./src/test/setupAfterEnv.ts'],
+  setupFilesAfterEnv: [
+    './src/test/loadTestingLibrary.ts',
+    './src/test/requireAssertions.ts',
+  ],
   testEnvironment: 'jest-environment-jsdom-global',
   testRegex: testFileRegex,
   transform: {
