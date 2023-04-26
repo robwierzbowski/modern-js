@@ -2,6 +2,7 @@ const testFileRegex = '\\.test\\.(j|t)sx?$';
 const transformFileRegex = '\\.(j|t)sx?$';
 
 const config = {
+  clearMocks: true,
   moduleNameMapper: {
     '\\.css$': 'identity-obj-proxy',
   },
