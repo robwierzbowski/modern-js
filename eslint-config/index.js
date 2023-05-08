@@ -1,3 +1,8 @@
+/* eslint disable import/first */
+// Don't load or disable outdated rules. This is used by prettier and must be
+// set before the import.
+process.env.ESLINT_CONFIG_PRETTIER_NO_DEPRECATED = 'true';
+
 // eslint-disable-next-line import/no-namespace
 import * as typescriptParser from '@typescript-eslint/parser';
 import prettierConfig from 'eslint-config-prettier';
@@ -9,9 +14,7 @@ import {
   typescriptConfig,
 } from 'eslint-robbnb';
 import globals from 'globals';
-
-// Don't set more rules than we need to
-process.env.ESLINT_CONFIG_PRETTIER_NO_DEPRECATED = 'true';
+/* eslint enable import/first */
 
 const languageOptions = {
   globals: {
