@@ -59,7 +59,7 @@ const config = [
 
   // JavaScript-based files
   {
-    files: ['**/*.js', '**/*.ts', '**/*.tsx', '**/*.d.ts'],
+    files: ['**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx', '**/*.d.ts'],
     languageOptions,
     linterOptions: {
       reportUnusedDisableDirectives: true,
