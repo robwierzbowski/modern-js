@@ -31,11 +31,13 @@ Playing around with a 2023+ JS build pipeline.
 - Vite handles CSS url/import resolution. They call path resolution "rebasing" which although correct sounds a bit weird/overloaded.
 - Looks like the `?inline` loader/query param doesn't work with `NodeNext` imports enabled. See this guide for more info on code splitting: https://vitejs.dev/guide/features.html#css-code-splitting. This is a moot point as I've had to revert to vite `node` imports to support dependency `*.d.ts` file resolution.
 
-### Jest ✅ vs node-test-runner vs Ava
+### Jest ✅ vs node-test-runner vs Ava vs Vitest
 
 - There's a [new test runner native to node](https://glebbahmutov.com/blog/trying-node-test-runner/), but I don't think it's ready for wide usage. Aside from the lack of community support with linters, etc. due to newness, the failed test output is not on par with existing options.
-- We could look at Ava again. I'm thinking Jest is probably best for familiarity and market share.
-- The first package that comes up when you search Jest and ESBuild is abandoned, but there's a very light Jest transformer wrapper at https://github.com/AkifumiSato/esbuild-jest-transform that works great. ESB options are pass through and ESB is a peer dependency, exactly what I want.
+- Ava is pretty focused on node and functional ES code; Jest and related are a better fit for node and DOM testing.
+- The first package that comes up when you search Jest and ESBuild is abandoned, but there's a very light Jest transformer wrapper at https://github.com/AkifumiSato/esbuild-jest-transform. ESB options are pass through and ESB is a peer dependency, exactly what I want.
+- BUT, due to Jest usually running transformers in sync mode, we can't use plugins like css-modules in esbuild-jest-transform. I hacked at esbuild-jest-transform for a bit, but wasn't able to trigger an asyncProcess transform. I think it might have to do with how Jest chooses whether a .js file is an ES or common-style module. References: https://github.com/AkifumiSato/esbuild-jest-transform/issues/7, https://jestjs.io/docs/code-transformation, https://github.com/evanw/esbuild/issues/2821, https://github.com/kulshekhar/ts-jest/blob/main/src/legacy/ts-jest-transformer.ts
+- [Vitest](https://vitest.dev/) looks interesting — it's got a great benefit of using the same Vite build/plugins as the prod site for testing. It's young and doesn't seem as focused as Jest, or as clearly documented, but it might be worth trying just for the consistency of code transformations being the same in test and production.
 
 ### React Testing Library
 
