@@ -1,3 +1,4 @@
+// Vitest's Jest-like API is compatible with these Jest matchers
 import matchers from '@testing-library/jest-dom/matchers';
 import { cleanup } from '@testing-library/react';
 import { expect, afterEach, beforeEach } from 'vitest';
