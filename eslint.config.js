@@ -51,7 +51,7 @@ const config = [
     files: ['**/*.test.js', '**/*.test.ts', '**/*.test.tsx', '**/test/**'],
     languageOptions: {
       globals: {
-        ...vitestGlobals,
+        ...vitestGlobals.environments.env.globals,
       },
     },
   },

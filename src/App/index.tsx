@@ -7,7 +7,7 @@ const App = () => {
 
   return (
     <div className={styles.app}>
-      <h1>Vite + React + TS + EsBuild</h1>
+      <h1>Vite + React + TS + EsBuild + Vitest</h1>
       <button className={styles.button} onClick={onClick} type="button">
         count is {count}
       </button>

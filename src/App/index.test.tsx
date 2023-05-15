@@ -7,7 +7,7 @@ describe('App', () => {
     render(<App />);
 
     expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(
-      'Vite + React + TS + EsBuild',
+      'Vite + React + TS + EsBuild + Vitest',
     );
   });
 
