@@ -1,7 +1,18 @@
 .app {
   border: #fbd87f 0.5vh solid;
+  padding: 3rem;
 
   &:hover {
     border-color: #10ffcb;
   }
+
+  &:has(.button:active) {
+    border-color: #f991cc;
+  }
+}
+
+.button {
+  border: 1px black solid;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1.5rem;
 }
