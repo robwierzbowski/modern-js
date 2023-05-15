@@ -3,6 +3,7 @@
 // eslint-disable-next-line import/no-namespace
 import * as typescriptParser from '@typescript-eslint/parser';
 import prettierConfig from 'eslint-config-prettier';
+import vitestGlobals from 'eslint-plugin-vitest-globals';
 import { robBnBConfig } from 'eslint-robbnb';
 import globals from 'globals';
 
@@ -50,7 +51,7 @@ const config = [
     files: ['**/*.test.js', '**/*.test.ts', '**/*.test.tsx', '**/test/**'],
     languageOptions: {
       globals: {
-        ...globals.jest,
+        ...vitestGlobals,
       },
     },
   },

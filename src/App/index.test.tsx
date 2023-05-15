@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import { userEvent } from '../test/userEventStub.ts';
+import userEvent from '@testing-library/user-event';
 import { App } from './index.tsx';
 
 describe('App', () => {
