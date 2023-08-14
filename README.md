@@ -2,6 +2,22 @@
 
 Playing around with a 2023+ JS build pipeline.
 
+## Usage
+
+```shell
+npm install
+
+npm run dev
+# or
+npm run build
+# or
+npm run lint
+# or
+npm run test
+# or
+npm run analyze
+```
+
 ## Technology choices and notes
 
 ### Vite ✅ vs EsBuild vs Turbopack
