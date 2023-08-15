@@ -42,6 +42,7 @@
     "eslint-robbnb": "^1.0.0",
     "globals": "^13.20.0",
     "jsdom": "^22.0.0",
+    "postcss-mixins": "^9.0.4",
     "postcss-nested": "^6.0.1",
     "rollup-plugin-visualizer": "^5.9.0",
     "typescript": "^5.0.4",
