@@ -2,25 +2,45 @@
 
 Playing around with a 2023+ JS build pipeline.
 
-## Usage
+## Installation
 
-```shell
-npm install
-
-npm run dev
-# or
-npm run build
-# or
-npm run lint:js
-# or
-npm run lint:css
-# or
-npm run test
-# or
-npm run analyze
+```sh
+$ npm install
 ```
 
+## Usage
+
+Develop in `src/` using [React](https://react.dev/), [TypeScript](https://www.typescriptlang.org/) and [PostCSS](https://postcss.org/) with [nesting](https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-nesting) and [mixins](https://github.com/postcss/postcss-mixins). Use VSCode integrations for [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode), [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint), and [Stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint) to get author-time formatting and hints.
+
+### Scripts
+
+#### `npm run dev`
+
+Starts the app in local development mode.
+
+#### `npm run build`
+
+Builds the application into deployable assets. Typechecks and tests must pass to `build`.
+
+#### `npm run lint:js`
+
+Enforces a consistent style and quality level in JavaScript with [ESLint](https://eslint.org/).
+
+#### `npm run lint:css`
+
+Enforces a consistent style and quality level in CSS with [Stylelint](https://stylelint.io/).
+
+#### `npm run test`
+
+Runs local tests with [Vitest](https://vitest.dev/)
+
+#### `npm run analyze`
+
+Generates an interactive visualization of the bundle composition and size using [rollup-plugin-visualizer](https://github.com/btd/rollup-plugin-visualizer).
+
 ## Technology choices and notes
+
+Ongoing notes to keep track of what I'm learning.
 
 ### Vite ✅ vs EsBuild vs Turbopack
 
