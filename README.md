@@ -10,7 +10,7 @@ npm install
 
 ## Usage
 
-Develop in `src/` using [React](https://react.dev/), [TypeScript](https://www.typescriptlang.org/) and [PostCSS](https://postcss.org/) with [nesting](https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-nesting) and [mixins](https://github.com/postcss/postcss-mixins). Use VSCode integrations for [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode), [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint), and [Stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint) to get author-time formatting and hints.
+Develop in `src/` using [React](https://react.dev/), [TypeScript](https://www.typescriptlang.org/) and [PostCSS](https://postcss.org/) with [nesting](https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-nesting) and [mixins](https://github.com/postcss/postcss-mixins). Use VSCode integrations for [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode), [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint), and [Stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint) to add author-time formatting and hints.
 
 ### Scripts
 
