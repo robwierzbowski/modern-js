@@ -8,7 +8,8 @@
     "analyze": "ANALYZE=true vite build",
     "build": "npm run typecheck && npm run test && vite build",
     "dev": "vite",
-    "lint": "eslint --format=pretty .",
+    "lint:css": "npx stylelint **/*.css",
+    "lint:js": "eslint --format=pretty .",
     "preview": "vite preview",
     "test": "vitest",
     "typecheck": "tsc"
@@ -45,6 +46,9 @@
     "postcss-mixins": "^9.0.4",
     "postcss-nested": "^6.0.1",
     "rollup-plugin-visualizer": "^5.9.0",
+    "stylelint": "^15.10.2",
+    "stylelint-config-standard": "^34.0.0",
+    "stylelint-css-modules": "^1.2.2",
     "typescript": "^5.0.4",
     "vite": "^4.1.4",
     "vitest": "^0.31.0"

@@ -11,7 +11,9 @@ npm run dev
 # or
 npm run build
 # or
-npm run lint
+npm run lint:js
+# or
+npm run lint:css
 # or
 npm run test
 # or
