@@ -5,7 +5,7 @@ Playing around with a 2023+ JS build pipeline.
 ## Installation
 
 ```sh
-$ npm install
+npm install
 ```
 
 ## Usage
