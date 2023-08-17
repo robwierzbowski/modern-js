@@ -1,5 +1,4 @@
-// TODO: Expand stylelint rules and potentially extract similar to eslint-robbnb
-
+// Core rules not set in the standard config
 const coreRules = {
   'at-rule-no-unknown': [
     true,
@@ -12,6 +11,35 @@ const coreRules = {
       ignoreAtRules: ['define-mixin', 'mixin'],
     },
   ],
+  'color-named': 'never',
+  'declaration-no-important': true,
+  // An excellent rule to prevent some bad habits for perf and maintenance
+  'declaration-property-value-disallowed-list': {
+    '/^background/': ['http:', 'https:'],
+    '/^transition/': ['/all/'],
+  },
+  'declaration-property-value-no-unknown': true,
+  'function-url-no-scheme-relative': true,
+  'length-zero-no-unit': true,
+  // An arbitrary rule to try to keep styles more maintainable
+  'max-nesting-depth': 4,
+  'media-feature-name-value-no-unknown': true,
+  'no-unknown-animations': true,
+  'no-unknown-custom-properties': true,
+  'rule-empty-line-before': [
+    'always-multi-line',
+    {
+      except: ['first-nested'],
+      ignore: ['after-comment', 'inside-block'],
+    },
+  ],
+  // An arbitrary rule to try to keep styles more maintainable
+  'selector-max-compound-selectors': 5,
+  'selector-max-id': 0,
+  // An arbitrary rule to try to keep styles more maintainable
+  'selector-max-specificity': '0,4,0',
+  'selector-max-universal': 1,
+  'selector-no-qualifying-type': true,
   'selector-pseudo-class-no-unknown': [
     true,
     {
