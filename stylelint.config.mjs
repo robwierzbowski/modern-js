@@ -28,6 +28,27 @@ const coreRules = {
   'media-feature-name-value-no-unknown': true,
   'no-unknown-animations': true,
   'no-unknown-custom-properties': true,
+  'property-disallowed-list': [
+    [
+      // These rules are not meant for use in web documents
+      'direction',
+      'unicode-bidi',
+      // In most cases, we should use a modern layout algorithm. In cases where
+      // floats are the best choice, please disable this rule per line.
+      'clear',
+      'float',
+      // Non-standard properties should be avoided in favor of standard props. For
+      // example, use transform: scale() instead of zoom.
+      'max-zoom',
+      'min-zoom',
+      'user-zoom',
+      'zoom',
+    ],
+    {
+      message: property =>
+        `The \`${property}\` property is disallowed. See comments in stylelint.config.js for reasoning and alternatives.`,
+    },
+  ],
   'rule-empty-line-before': [
     'always-multi-line',
     {
