@@ -1,3 +1,5 @@
+import { orderRules } from './css-order.mjs';
+
 // Core rules not set in the standard config
 const coreRules = {
   'at-rule-no-unknown': [
@@ -77,6 +79,7 @@ const config = {
     'stylelint-css-modules',
     'stylelint-declaration-block-no-ignored-properties',
     'stylelint-high-performance-animation',
+    'stylelint-order',
     'stylelint-use-nesting',
   ],
   reportDescriptionlessDisables: true,
@@ -88,6 +91,7 @@ const config = {
     ...cssModulesRules,
     ...highPerformanceAnimationRules,
     ...noIgnoredPropertiesRules,
+    ...orderRules,
     ...useNestingRules,
   },
 };

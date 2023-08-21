@@ -51,6 +51,7 @@
     "stylelint-css-modules": "^1.2.2",
     "stylelint-declaration-block-no-ignored-properties": "^2.7.0",
     "stylelint-high-performance-animation": "^1.9.0",
+    "stylelint-order": "^6.0.3",
     "stylelint-use-nesting": "^4.1.0",
     "typescript": "^5.0.4",
     "vite": "^4.1.4",
