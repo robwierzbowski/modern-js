@@ -48,7 +48,7 @@
     "prettier": "^3.0.2",
     "rollup-plugin-visualizer": "^5.9.0",
     "stylelint": "^15.10.2",
-    "stylelint-config-robw": "^0.0.5",
+    "stylelint-config-robw": "^0.0.7",
     "stylelint-config-standard": "^34.0.0",
     "stylelint-css-modules": "^1.2.2",
     "stylelint-declaration-block-no-ignored-properties": "^2.7.0",
