@@ -45,6 +45,7 @@
     "jsdom": "^22.0.0",
     "postcss-mixins": "^9.0.4",
     "postcss-nested": "^6.0.1",
+    "prettier": "^3.0.2",
     "rollup-plugin-visualizer": "^5.9.0",
     "stylelint": "^15.10.2",
     "stylelint-config-robw": "^0.0.5",
