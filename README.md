@@ -20,7 +20,7 @@ Starts the app in local development mode.
 
 #### `npm run build`
 
-Builds the application into deployable assets. Typechecks and tests must pass to `build`.
+Builds the application into deployable assets. Lints, typechecks, and tests must pass to `build`.
 
 #### `npm run lint:js`
 

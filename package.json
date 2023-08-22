@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "analyze": "ANALYZE=true vite build",
-    "build": "npm run typecheck && npm run test && vite build",
+    "build": "npm run lint:js && npm run lint:css && npm run typecheck && npm run test && vite build",
     "dev": "vite",
     "lint:css": "npx stylelint **/*.css",
     "lint:js": "eslint --format=pretty .",
