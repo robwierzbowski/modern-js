@@ -16,27 +16,27 @@ Develop in `src/` using [React](https://react.dev/), [TypeScript](https://www.ty
 
 #### `npm run dev`
 
-Starts the app in local development mode.
+Start the app in local development mode.
 
 #### `npm run build`
 
-Builds the application into deployable assets. Lints, typechecks, and tests must pass to `build`.
+Build the application into deployable assets. Lints, typechecks, and tests must pass to `build`.
 
 #### `npm run lint:js`
 
-Enforces a consistent style and quality level in JavaScript with [ESLint](https://eslint.org/).
+Enforce a consistent style and quality level in JavaScript with [ESLint](https://eslint.org/).
 
 #### `npm run lint:css`
 
-Enforces a consistent style and quality level in CSS with [Stylelint](https://stylelint.io/).
+Enforce a consistent style and quality level in CSS with [Stylelint](https://stylelint.io/).
 
 #### `npm run test`
 
-Runs local tests with [Vitest](https://vitest.dev/)
+Run local tests with [Vitest](https://vitest.dev/)
 
 #### `npm run analyze`
 
-Generates an interactive visualization of the bundle composition and size using [rollup-plugin-visualizer](https://github.com/btd/rollup-plugin-visualizer).
+Generate an interactive visualization of the bundle composition and size using [rollup-plugin-visualizer](https://github.com/btd/rollup-plugin-visualizer).
 
 ## Technology choices and notes
 
