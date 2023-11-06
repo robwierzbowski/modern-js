@@ -59,7 +59,7 @@ An ongoing list of projects tested and what I'm learning about them.
 
 ### Types: TypeScript ✅
 
-- Note that with Vite, we run `tsc` with `no-emit` for author and compile time type checking, and using EsBuild to transpile the TS into JavaScript.
+- Note that with Vite, we run `tsc` with `no-emit` for author and compile time type checking, and use EsBuild to transpile the TS into JavaScript.
 - In order to use TS for config files, we need to configure the CLI and the editor (VS Code) to use an executor that understands TS without compilation (i.e., [ts-node](https://github.com/TypeStrong/ts-node)). That's one step too far for me right now, so config files will remain in JS.
 
 ### Styling: SCSS vs PostCSS ✅ vs vanilla CSS
