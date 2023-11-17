@@ -32,7 +32,7 @@
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "@typescript-eslint/parser": "^5.56.0",
-    "@vitejs/plugin-react": "^3.1.0",
+    "@vitejs/plugin-react": "^4.2.0",
     "autoprefixer": "^10.4.14",
     "browserslist-to-esbuild": "^1.2.0",
     "esbuild-css-modules-plugin": "^2.7.1",
@@ -50,7 +50,7 @@
     "stylelint": "^15.10.2",
     "stylelint-config-robw": "^1.0.0",
     "typescript": "^5.0.4",
-    "vite": "^4.1.4",
+    "vite": "^5.0.0",
     "vitest": "^0.31.0"
   },
   "type": "module"
